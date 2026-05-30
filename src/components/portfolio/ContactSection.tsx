@@ -53,13 +53,13 @@ const socials = [
 export function ContactSection() {
   return (
     <>
-      <section id="contact" style={{ padding: '120px 0 0', position: 'relative' }}>
+      <section id="contact" className="portfolio-section" style={{ paddingBottom: 0 }}>
         <div
+          className="contact-box"
           style={{
             background: 'linear-gradient(180deg, rgba(139,92,246,0.08), rgba(34,211,238,0.04))',
             border: '1px solid rgba(255,255,255,0.14)',
             borderRadius: 32,
-            padding: '72px 56px',
             textAlign: 'center',
             position: 'relative',
             overflow: 'hidden',
@@ -173,15 +173,7 @@ export function ContactSection() {
           </div>
 
           {/* Socials grid — 5 columns */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(5, 1fr)',
-              gap: 12,
-              marginTop: 24,
-            }}
-            className="socials-grid"
-          >
+          <div className="socials-grid">
             {socials.map(({ href, label, handle, icon }) => (
               <SocialCard key={href} href={href} label={label} handle={handle} icon={icon} />
             ))}

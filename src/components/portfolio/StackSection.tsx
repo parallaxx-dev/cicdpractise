@@ -23,7 +23,7 @@ const stack: Tech[] = [
 
 export function StackSection() {
   return (
-    <section id="stack" style={{ padding: '120px 0', position: 'relative' }}>
+    <section id="stack" className="portfolio-section">
       <SectionHead
         number="/ 02"
         title={<>The <GradientEm>toolbelt</GradientEm></>}

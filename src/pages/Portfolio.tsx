@@ -5,24 +5,16 @@ import { StackSection } from '@/components/portfolio/StackSection';
 import { WorkSection } from '@/components/portfolio/WorkSection';
 import { ContactSection } from '@/components/portfolio/ContactSection';
 
-const wrap: React.CSSProperties = {
-  position: 'relative',
-  zIndex: 2,
-  maxWidth: 1200,
-  margin: '0 auto',
-  padding: '0 32px',
-};
-
 export function Portfolio() {
   return (
     <>
-      <div style={wrap}>
+      <div className="wrap">
         <HeroSection />
       </div>
 
       <Marquee />
 
-      <div style={wrap}>
+      <div className="wrap">
         <AboutSection />
         <StackSection />
         <WorkSection />

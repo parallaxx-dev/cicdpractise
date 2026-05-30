@@ -13,6 +13,7 @@ export function Nav() {
 
   return (
     <nav
+      className="nav-pill"
       style={{
         position: 'fixed',
         top: 24,
@@ -21,8 +22,6 @@ export function Nav() {
         zIndex: 50,
         display: 'flex',
         alignItems: 'center',
-        gap: 6,
-        padding: '8px 10px 8px 18px',
         background: 'rgba(15, 14, 22, 0.6)',
         backdropFilter: 'blur(20px) saturate(150%)',
         WebkitBackdropFilter: 'blur(20px) saturate(150%)',
@@ -35,6 +34,7 @@ export function Nav() {
       {/* Brand */}
       <Link
         to="/"
+        className="nav-brand"
         style={{
           fontFamily: '"JetBrains Mono", monospace',
           fontSize: 12,
@@ -45,7 +45,6 @@ export function Nav() {
           borderRight: '1px solid rgba(255,255,255,0.08)',
           marginRight: 8,
           textDecoration: 'none',
-          display: 'flex',
           alignItems: 'center',
           gap: 8,
         }}
@@ -71,12 +70,11 @@ export function Nav() {
           <a
             key={href}
             href={href}
+            className="nav-link"
             style={{
-              fontSize: 13,
               fontWeight: 500,
               color: '#8b8a96',
               textDecoration: 'none',
-              padding: '8px 14px',
               borderRadius: 100,
               transition: 'color 0.2s, background 0.2s',
             }}
@@ -96,12 +94,11 @@ export function Nav() {
       {/* Games route link */}
       <NavLink
         to="/games"
+        className="nav-link"
         style={({ isActive }) => ({
-          fontSize: 13,
           fontWeight: 500,
           color: isActive ? '#f4f3ee' : '#8b8a96',
           textDecoration: 'none',
-          padding: '8px 14px',
           borderRadius: 100,
           background: isActive ? 'rgba(255,255,255,0.05)' : 'transparent',
           transition: 'color 0.2s, background 0.2s',

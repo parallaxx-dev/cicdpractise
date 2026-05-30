@@ -20,15 +20,7 @@ export function HeroSection() {
         position: 'relative',
       }}
     >
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr auto',
-          gap: 80,
-          alignItems: 'center',
-        }}
-        className="hero-grid"
-      >
+      <div className="hero-grid">
         {/* Left: text */}
         <div>
           <div
@@ -188,7 +180,7 @@ export function HeroSection() {
         </div>
 
         {/* Right: avatar */}
-        <div style={{ position: 'relative', width: 320, height: 320, flexShrink: 0 }}>
+        <div className="avatar-wrap">
           {/* Spinning conic gradient ring */}
           <div
             style={{

@@ -82,7 +82,7 @@ const projects: Project[] = [
 
 export function WorkSection() {
   return (
-    <section id="work" style={{ padding: '120px 0', position: 'relative' }}>
+    <section id="work" className="portfolio-section">
       <SectionHead
         number="/ 03"
         title={<>Selected <GradientEm>work</GradientEm></>}
@@ -102,14 +102,8 @@ export function WorkSection() {
         }
       />
 
-      {/* CSS grid with named areas for feature/wide/regular variants */}
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gridTemplateRows: 'auto auto auto',
-          gap: 16,
-        }}
+        style={{ gridTemplateRows: 'auto auto auto' }}
         className="project-grid"
       >
         {projects.map(p => (

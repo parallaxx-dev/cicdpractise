@@ -11,7 +11,7 @@ const langChips = ['EN', 'తె', 'हि', 'मर'];
 
 export function AboutSection() {
   return (
-    <section id="about" style={{ padding: '120px 0', position: 'relative' }}>
+    <section id="about" className="portfolio-section">
       <SectionHead
         number="/ 01"
         title={<>About <GradientEm>me</GradientEm></>}
@@ -19,13 +19,7 @@ export function AboutSection() {
       />
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1.4fr 1fr',
-          gap: 48,
-          alignItems: 'start',
-          marginBottom: 64,
-        }}
+        style={{ marginBottom: 64 }}
         className="about-grid"
       >
         {/* Bio text */}
@@ -97,7 +91,7 @@ export function AboutSection() {
       </div>
 
       {/* Stats */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24 }} className="stats-grid">
+      <div className="stats-grid">
         {stats.map(({ n, label }) => (
           <div
             key={label}
