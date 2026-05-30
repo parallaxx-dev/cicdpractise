@@ -20,7 +20,6 @@ jobs:
         run: |
           npm install
           npm run build
-          mv dist/index*.html dist/index.html
       - name: Clear Old Files from Server
         uses: appleboy/ssh-action@v1.0.3
         with:
