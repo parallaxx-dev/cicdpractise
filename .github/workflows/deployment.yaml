@@ -35,6 +35,6 @@ jobs:
           host: ${{secrets.SERVER_IP}}
           username: ubuntu
           key: ${{ secrets.SERVER_PASSWORD }}
-          source: "dist/*"
+          source: "dist/"
           target: "/var/www/aadityapyarla"
           strip_components: 2
