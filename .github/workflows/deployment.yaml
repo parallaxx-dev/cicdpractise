@@ -27,7 +27,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ubuntu
           key: ${{ secrets.SERVER_PASSWORD }}
-          script: rm -rf /var/www/html/*
+          script: rm -rf /var/www/aadityapyarla/*
 
       - name: Deploy Static Files
         uses: appleboy/scp-action@v0.1.7
